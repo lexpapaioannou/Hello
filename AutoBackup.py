@@ -1,13 +1,14 @@
 import os, shutil
 from shutil import copytree
+#I am not currently using shutil or copytree, but I intend to use it for copying folders in the future
 
 while True:
-	path = (input("Please input the directory: "))
-	print(path) 
-	if os.path.exists("/Users/Lex/desktop/flashdrive"):
-		#read 
-		print("I found the directory.")
-		break 
-	else:
-		print("I could not find the directory.  Please check your spelling.")
-		break #should be a continue outside of debugging
+        pathVali = os.path.exists(input("\nPlease input the directory: \n"))
+        if pathVali == False:
+            print("I could not find that directory.  Please check your spelling and try again.")
+            continue
+        else:
+            print("I found that directory.")
+        print("This line works")
+        break
+    
