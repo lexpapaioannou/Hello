@@ -1,10 +1,7 @@
-import os, shutil, getpass, time, datetime
+import os, shutil, time, datetime
 from datetime import datetime
 from shutil import copytree
 
-user = getpass.getuser()
-a = 0
-rows = ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '']
 savePath = "/Applications/autoBackup/"
 path_to_watch = '/Volumes/'
 before = dict ([(f, None) for f in os.listdir (path_to_watch)])
