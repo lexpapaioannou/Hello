@@ -1,0 +1,1 @@
+This is just a public repo of all the programming languages I've encountered in the wild.  They all follow the typical "Hello World" format, so I've just been using them as a reference in case I need a reminder what language is formated how.  
